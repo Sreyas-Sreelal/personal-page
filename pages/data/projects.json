@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "title": "Malluscript",
+            "description": "An interpreted programming language to write computer programs in Malayalam",
+            "link": "https://github.com/Sreyas-Sreelal/malluscript"
+        },
+        {
+            "title": "PacPaw",
+            "description": "A package manager for PAWN language.",
+            "link": "https://github.com/Sreyas-Sreelal/pacpaw"
+        },
+        {
+            "title": "Cender",
+            "description": "A File sharing application built in pure C as a part of micro project in college",
+            "link": "https://github.com/Sreyas-Sreelal/Cender"
+        },
+        {
+            "title": "TgConnector",
+            "description": "A telegram connector library for interacting with telegram inside GTA San Andreas",
+            "link": "https://github.com/Sreyas-Sreelal/tgconnector"
+        },
+        {
+            "title": "PawnScraper",
+            "description": "Web scraping library for Pawn language.",
+            "link": "https://github.com/Sreyas-Sreelal/pawn-scraper"
+        },
+        {
+            "title": "Voca",
+            "description": "Intelligent voice assistant in Python",
+            "link": "https://github.com/Sreyas-Sreelal/Voca"
+        }
+    ]
+}

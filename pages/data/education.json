@@ -1,0 +1,19 @@
+{
+    "education": [
+        {
+            "timeperiod": "2022–2024",
+            "course": "Computer Science Masters (MTech)",
+            "institution": "Amaljyothi College of Engineering, Kanjirappali, KTU."
+        },
+        {
+            "timeperiod": "2017–2021",
+            "course": "Computer Science BTech",
+            "institution": "Amaljyothi College of Engineering, Kanjirappali, KTU."
+        },
+        {
+            "timeperiod": "2015–2017",
+            "course": "Higher Secondary Education",
+            "institution": "Sreyas Public School and Junior College, Ponkunnam"
+        }
+    ]
+}

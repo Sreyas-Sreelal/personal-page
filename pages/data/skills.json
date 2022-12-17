@@ -1,0 +1,37 @@
+{
+    "programming": [
+        "Golang",
+        "C/C++",
+        "Rust",
+        "Python",
+        "Javascript/Typescript",
+        "PAWN",
+        "HTML",
+        "CSS"
+    ],
+    "os": [
+        "Windows",
+        "Arch",
+        "Debian",
+        "Solaris"
+    ],
+    "db": [
+        "MySQL",
+        "SQLite",
+        "PostgreSQL"
+    ],
+    "tools": [
+        "React",
+        "React Native",
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Jira"
+    ],
+    "other": [
+        "Compiler Writing",
+        "Machine Learning",
+        "CI/CD",
+        "Reverse Engineering"
+    ]
+}
