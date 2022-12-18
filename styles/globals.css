@@ -23,7 +23,7 @@ h1 {
 h2 {
     text-align: right;
     font-style: italic;
-    font-size: calc(1.25em + 1vmin);
+    font-size: calc(1.2em + 1vmin);
 }
 
 h3 {
