@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AboutMe from "./data/aboutme.json";
@@ -9,10 +8,11 @@ import Projects from "./data/projects.json";
 
 function Section({ title, content }) {
     return <>
-        <h2>
+        <h3>
             {title}
-        </h2>
+        </h3>
         {content}
+
     </>
 }
 
@@ -20,15 +20,7 @@ function getContentExperience() {
     return <>
         {Experiences.experiences.map(experience => {
             return (<>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>{experience.timeperiod}</th>
-                            <td>{experience.company},</td>
-                            <td>{experience.position}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4><b>{experience.timeperiod}</b> {experience.company},{experience.position}</h4>
                 <ul>
                     {
                         experience.details.map(detail => {
@@ -48,36 +40,42 @@ function getContentExperience() {
 
 function getContentSkills() {
     function getSpecificSkill(skilltype) {
-        return <>{skilltype.map(skill => <div className="label">{skill}</div>)}<br/></>
+        return <>{skilltype.map(skill => <div className="label">{skill}</div>)}<div className="clear-label"></div></>
     }
 
-    return <>
-        <h3>Programming Skills</h3>
-        {getSpecificSkill(Skills.programming)}
-        <h3>Operating Systems</h3>
-        {getSpecificSkill(Skills.os)}
-        <h3>Databases</h3>
-        {getSpecificSkill(Skills.db)}
-        <h3>Tools/Framework</h3>
-        {getSpecificSkill(Skills.tools)}
-        <h3>Other</h3>
-        {getSpecificSkill(Skills.other)}
-    </>
+    return <ul>
+        <li>
+            <h4>Programming Skills</h4>
+            {getSpecificSkill(Skills.programming)}
+        </li>
+        <li>
+            <h4>Operating Systems</h4>
+            {getSpecificSkill(Skills.os)}
+        </li>
+        <li>
+            <h4>Databases</h4>
+            {getSpecificSkill(Skills.db)}
+        </li>
+        <li>
+            <h4>Tools/Framework</h4>
+            {getSpecificSkill(Skills.tools)}
+        </li>
+        <li>
+            <h4>Other</h4>
+            {getSpecificSkill(Skills.other)}
+        </li>
+    </ul>
 }
 
 function getContentEducation() {
     return <>
         {
             Education.education.map(education => <>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>{education.timeperiod}</td>
-                            <th>{education.course},</th>
-                            <td>{education.institution}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="row">
+                    <div className="col-1">{education.timeperiod}</div>
+                    <div className="col-1"><b>{education.course}</b></div>
+                    <div className="col-1">{education.institution}</div>
+                </div>
             </>)
         }
     </>
@@ -85,37 +83,38 @@ function getContentEducation() {
 
 function getContentProjects() {
     return <>
-        <table>
-            <tbody>
-                {
-
-                    Projects.projects.map(project => <>
-                        <tr>
-                            <th><a href={project.link} >{project.title}</a></th>
-                            <td>{project.description}</td>
-                        </tr>
-                    </>
-                    )
-
-                }
-            </tbody>
-        </table>
+        {
+            Projects.projects.map(project =>
+                <div className="row">
+                    <div className="col-2"><b><a href={project.link} >{project.title}</a></b></div>
+                    <div className="col-2">{project.description}</div>
+                </div>
+            )
+        }
     </>
 }
 
 export default function Index() {
     return (
-        <>
+        <><main>
+            <div className="image">
+                <Image src={"/me.jpg"} width={140} height={140} />
+            </div>
             <h1>
                 {AboutMe.name}
-            </h1>
-            <main>
-                {AboutMe.description}
-            </main>
-            <Section title={"Experiences"} content={getContentExperience()} />
-            <Section title="Techinical Skills" content={getContentSkills()} />
-            <Section title="Education" content={getContentEducation()} />
-            <Section title="Projects" content={getContentProjects()} />
+            </h1><div className="clear-label"></div>
+            <hr />
+            <h2>{AboutMe.tagline}</h2>
+
+            {AboutMe.description}
+
+            <div className="container container-lg container-md container-sm container-xl">
+                <Section title={"Experiences"} content={getContentExperience()} />
+                <Section title="Techinical Skills" content={getContentSkills()} />
+                <Section title="Education" content={getContentEducation()} />
+                <Section title="Projects" content={getContentProjects()} />
+            </div>
+        </main>
         </>
     )
 }

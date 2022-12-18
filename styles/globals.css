@@ -1,37 +1,128 @@
 body {
-    padding: 0;
-    margin: 2%;
-    font-family:'Courier New', Courier, monospace;
-    color: rgb(239, 239, 239);
-    background-color: rgb(17, 28, 82);
-    font-size: larger;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    line-height: 2;
+}
+
+main {
+    font-size: calc(0.6em + 1vmin);
 }
 
 h1 {
-    text-align: center;
-
+    text-align: right;
+    display: block;
+    align-items: center  ;
     font-weight: 800;
+    font-size: calc(1.5em + 1vmin);
+}
+
+h2 {
+    text-align: right;
+    font-style: italic;
+    font-size: calc(1.25em + 1vmin);
+}
+
+h3 {
+    font-size: calc(1em + 1vmin);
+}
+
+h4 {
+    font-size: calc(0.8em + 1vmin);
+}
+
+.row {
+    display: flex;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+}
+
+.col-1 {
+    width: 33.33%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+
 
 }
 
+@media (max-width:992px) {
 
-td,th {
-    text-align: left;
-    margin: 30px auto;
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1000px;
+    }
 }
 
 .label {
-    background-color: rgb(228, 22, 87);
-    color:  rgb(255, 255, 255);
+    background-color: rgb(21, 2, 8);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
-    font-size: small;
     margin: 2px;
-    padding: 2px;
+    padding: 5px;
+    overflow: hidden;
+    float: left;
+    border-radius: 8px;
+
+}
+
+.image{
     float: left;
 }
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line hr {
+    width: 100%;
+    margin-right: 12%;
+
+}
+
+.clear-label {
+    clear: both;
+}
+
 a {
     text-decoration: none;
-    color: rgb(13, 232, 93);
+    color: rgb(170, 94, 7);
     text-shadow: 33em;
-
 }
