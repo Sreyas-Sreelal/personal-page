@@ -110,7 +110,7 @@ export default function Index() {
 
             <div className="container container-lg container-md container-sm container-xl">
                 <Section title={"Experiences"} content={getContentExperience()} />
-                <Section title="Techinical Skills" content={getContentSkills()} />
+                <Section title="Technical Skills" content={getContentSkills()} />
                 <Section title="Education" content={getContentEducation()} />
                 <Section title="Projects" content={getContentProjects()} />
             </div>
