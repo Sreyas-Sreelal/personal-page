@@ -72,9 +72,9 @@ function getContentEducation() {
         {
             Education.education.map(education => <>
                 <div className="row">
-                    <div className="col-1">{education.timeperiod}</div>
-                    <div className="col-1"><b>{education.course}</b></div>
-                    <div className="col-1">{education.institution}</div>
+                    <div className="col-3">{education.timeperiod}</div>
+                    <div className="col-3"><b>{education.course}</b></div>
+                    <div className="col-6">{education.institution}</div>
                 </div>
             </>)
         }
@@ -86,8 +86,8 @@ function getContentProjects() {
         {
             Projects.projects.map(project =>
                 <div className="row">
-                    <div className="col-2"><b><a href={project.link} >{project.title}</a></b></div>
-                    <div className="col-2">{project.description}</div>
+                    <div className="col-4"><b><a href={project.link} >{project.title}</a></b></div>
+                    <div className="col-8">{project.description}</div>
                 </div>
             )
         }
