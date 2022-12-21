@@ -11,9 +11,9 @@
             "link": "https://github.com/Sreyas-Sreelal/pacpaw"
         },
         {
-            "title": "Cender",
-            "description": "A File sharing application built in pure C as a part of micro project in college",
-            "link": "https://github.com/Sreyas-Sreelal/Cender"
+            "title": "Imgcode-rs",
+            "description": "Image to gcode converter for raster images",
+            "link": "https://github.com/Sreyas-Sreelal/imgcode-rs"
         },
         {
             "title": "TgConnector",
@@ -29,6 +29,17 @@
             "title": "Voca",
             "description": "Intelligent voice assistant in Python",
             "link": "https://github.com/Sreyas-Sreelal/Voca"
+        },
+        {
+            "title": "Entrega",
+            "description": "An universal ecommerce backend service.",
+            "link": "https://github.com/Sreyas-Sreelal/entrega"
+        },
+        {
+            "title": "torrent-rs",
+            "description": "Torrent manipulator in Rust",
+            "link": "https://github.com/Sreyas-Sreelal/torrent-rs"
         }
+        
     ]
 }
