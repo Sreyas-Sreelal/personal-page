@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import AboutMe from "./data/aboutme.json";
 import Experiences from "./data/experience.json";
 import Skills from "./data/skills.json";
@@ -109,7 +108,7 @@ export default function Index() {
             {AboutMe.description}
 
             <div className="container container-lg container-md container-sm container-xl">
-                <Section title={"Experiences"} content={getContentExperience()} />
+                <Section title="Experiences" content={getContentExperience()} />
                 <Section title="Technical Skills" content={getContentSkills()} />
                 <Section title="Education" content={getContentEducation()} />
                 <Section title="Projects" content={getContentProjects()} />
